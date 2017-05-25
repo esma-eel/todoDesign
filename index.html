@@ -1,0 +1,324 @@
+<!--WARNING : -->
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/compiled.min.css">
+	<link rel="stylesheet" href="css/master.css">
+	<title>Document</title>
+	<style>
+		
+		header, main, footer {
+			padding-right: 240px;
+		}
+		
+		@media only screen and (max-width : 992px) {
+			header, main, footer {
+				padding-right: 0;
+			}
+		}
+	</style>
+</head>
+<body class="fixed-sn white-skin bg-skin-lp">
+	<aside dir="rtl" class="">
+		<ul id="slide-out" class="side-nav fixed sn-bg-0 custom-scrollbar"> <!-- style="right: 0;"-->
+			<!-- Logo -->
+			<li>
+				<div class="user-box">
+					<img src="img/user.png" alt="avatar of user" class="img-fluid rounded-circle">
+					<p class="user text-center my-text-wet-asphalt">اسماعیل</p>
+				</div>
+			</li>
+			<!--/. Logo -->
+			<hr>
+			<li class="pr-5 pl-5 text-center">
+				<a class="nav-link" data-toggle="modal" data-target="#addNewGroup"> <i class="fa fa-plus fa-2x"  data-toggle="tooltip" data-placement="bottom" title="لیست جدید"></i> </a>
+			</li>
+			<hr>
+			<!-- Side navigation links -->
+			<li><a href="index.html" class="waves-effect pr-4">همه <span class="badge p-1 red mx-3">10 مهم</span></a></li>
+			<li><a href="#!" class="waves-effect pr-4">لیست 1<span class="badge p-1 red mx-3">10 مهم</span></a></li>
+			<li><a href="#!" class="waves-effect pr-4">لیست 2<span class="badge p-1 red mx-3">10 مهم</span></a></li>
+		</ul>
+				<!--/. Side navigation links -->
+				<!--<div class="sidenav-bg mask-strong"></div>-->
+		<!--/. Sidebar navigation -->
+	</aside>
+	<nav class="navbar fixed-top navbar-toggleable-md grey lighten-5 scrolling-navbar double-nav p-0"
+		 style="padding-left:20px;">
+		
+		
+		<!-- SideNav slide-out button -->
+		<div class="float-left mr-3">
+			<a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+		
+		</div>
+		
+		<!--Navbar links-->
+		<ul class="nav navbar-nav nav-flex-icons mr-auto">
+			<li class="nav-item">
+				<a class="nav-link waves-effect waves-light"><span class="btn elegant-color">خروج</span></a>
+			</li>
+		</ul>
+		<!--/Navbar links-->
+	
+		
+	</nav>
+	
+	
+	
+	<!----><!---->
+	<main class=""  style=" padding-left: 5px;
+    margin-left: 0px;margin-top: 25px;">
+		<div class="container-fluid my-container" > <!--CONTAINER FLUID-->
+		
+		<!--Modal: add new groupe-->
+		<div class="modal fade" id="addNewGroup" tabindex="-1" role="dialog" aria-labelledby="addNewGroup" aria-hidden="true" dir="rtl">
+			<div class="modal-dialog cascading-modal" role="document">  <!--add new gp modal-->
+				<!--Content-->
+				<div class="modal-content">
+					
+					<!--Header-->
+					<div class="modal-header light-blue darken-3 white-text text-center">
+						<button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+						<h4 class="title text-center mx-auto">لیست جدید</h4>
+					</div>
+					<!--Body-->
+					<div class="modal-body mb-0">
+						<div class="md-form form-sm">
+							<input type="text" id="gpName" class="form-control">
+							<label for="gpName" class="" style="margin-left: 45%">نام لیست</label>
+						</div>
+						<div class="md-form form-sm">
+							<textarea type="text" id="gpExplain" class="md-textarea" placeholder="توضیحات گروه"></textarea>
+						</div>
+						<div class="text-center mt-1-half">
+							<button class="btn btn-info mb-2"> ایجاد <i class="fa fa-magic ml-1"></i></button>
+						</div>
+					</div>
+				</div>
+				<!--/.Content-->
+			</div>
+		</div>
+		<!--Modal: add new groupe-->
+	
+	<!--<div class="container-fluid">&lt;!&ndash;mr-5 mt-3 mb-3 ml3&ndash;&gt;-->
+		<div class="row">
+			<div class="col-md-9">
+				<div class="list-group mx-auto">
+				<div class="list-group-item active">
+					<i class="fa fa-calendar ml-2"></i>
+					<span>امروز</span>
+					<div class="d-inline mr-auto">
+						<div class="row">
+							<div class="md-form col-10">
+								<input type="text" name="addTask" id="addTask" placeholder="کار جدید">
+							</div>
+							<div class="text-center col-2 p-3">
+								<a class="" title="اضافه کردن" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-plus"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-group-item list-group-item-action row mx-auto p-0">
+					<div class="col-sm-1">
+						<fieldset class="form-group pt-2">
+							<input type="checkbox" id="c1">
+							<label for="c1"></label>
+						</fieldset>
+					</div>
+					
+					<div class="col-sm-8">
+						<h4 class="d-inline"><a href="task.html" class="my-text-wet-asphalt">لورم ایپسوم متن
+							<span class="text-mute">#خیلی مهم برای من</span></a></h4>
+						<p class="text-mute">
+							اسم لیست
+						</p>
+					</div>
+					
+					<div class="col-sm-3 p-4">
+						<div class="row">
+							<div class="col text-center">
+								<span class="badge green p-2">یک برچسب</span>
+							</div>
+							<div class="col text-center">
+								<a class=""><i class="fa fa-star fa-2x my-text-sun-flower"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-group-item list-group-item-action row mx-auto p-0">
+					<div class="col-sm-1">
+						<fieldset class="form-group pt-2">
+							<input type="checkbox" id="c2">
+							<label for="c2"></label>
+						</fieldset>
+					</div>
+					
+					<div class="col-sm-8">
+						<h4 class="d-inline"><a href="task.html" class="my-text-wet-asphalt">لورم ایپسوم متن
+							<span class="text-mute">#خیلی مهم برای من</span></a></h4>
+						<p class="text-mute">
+							اسم لیست
+						</p>
+					</div>
+					
+					<div class="col-sm-3 p-4">
+						<div class="row">
+							<div class="col text-center">
+								<span class="badge red p-2">یک برچسب</span>
+							</div>
+							<div class="col text-center">
+								<a class=""><i class="fa fa-star fa-2x my-text-clouds"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-group-item list-group-item-action row mx-auto p-0">
+					<div class="col-sm-1">
+						<fieldset class="form-group pt-2">
+							<input type="checkbox" id="c3">
+							<label for="c3"></label>
+						</fieldset>
+					</div>
+					
+					<div class="col-sm-8">
+						<h4 class="d-inline"><a href="task.html" class="my-text-wet-asphalt">لورم ایپسوم متن
+							<span class="text-mute">#خیلی مهم برای من</span></a></h4>
+						<p class="text-mute">
+							اسم لیست
+						</p>
+					</div>
+					
+					<div class="col-sm-3 p-4">
+						<div class="row">
+							<div class="col text-center">
+								<span class="badge blue p-2">یک برچسب</span>
+							</div>
+							<div class="col text-center">
+								<a class=""><i class="fa fa-star fa-2x my-text-sun-flower"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-group-item list-group-item-action row mx-auto p-0">
+					<div class="col-sm-1">
+						<fieldset class="form-group pt-2">
+							<input type="checkbox" id="c4">
+							<label for="c4"></label>
+						</fieldset>
+					</div>
+					
+					<div class="col-sm-8">
+						<h4 class="d-inline">لورم ایپسوم متن <span class="text-mute">#خیلی مهم برای من</span></h4>
+						<p class="text-mute">
+							اسم لیست
+						</p>
+					</div>
+					
+					<div class="col-sm-3 p-4">
+						<div class="row">
+							<div class="col text-center">
+								<span class="badge yellow p-2">یک برچسب</span>
+							</div>
+							<div class="col text-center">
+								<a class=""><i class="fa fa-star fa-2x my-text-sun-flower"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card p-4 mx-auto">
+					<h3 class="mx-auto">ویرایش کار</h3><!--ALERT!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+					<a class="btn btn-warning"
+					   onclick="toastr.warning('این یک هشدار هستش');">این
+						یک تابع از و باید صدا زده شود اینجا محل اصلیه این نیست و نمونس</a>
+					<!--!!!!!!!!!!!!!!!!!!!!!!!ALERT-->
+					<form action="#!" dir="rtl" class="mt-3 mb-2">
+						
+						<div class="md-form">
+							<span>نام</span>
+							<input type="text" id="taskName" class="form-control" placeholder="اسم کاری که هستش">
+						</div>
+						
+						<div class="md-form">
+							<div>انتخاب تاریخ</div>
+							<br><br>
+							<!--<input placeholder="تاریخ انتخاب شده" type="text" id="date-picker-example"
+								   class="form-control datepicker">-->
+							
+							<input type="text" id="pcal1" class="pdate col-10 float-left">
+						</div>
+						
+						<br><br>
+						<div class="md-form">
+							<span>ساعت</span>
+							<input placeholder="انتخاب زمان" type="text" id="input_starttime" class="form-control timepicker">
+						</div>
+						<br>
+						<div class="file-field">
+							<div class="btn btn-primary btn-sm pr-2 pl-2 float-right ml-3">
+								<span class="p-1" style="font-size: 15px;">ارسال فایل</span>
+								<input type="file">
+							</div>
+							<div class="file-path-wrapper ">
+								<input class="file-path validate" type="text" placeholder="فایل خود را آپلود کنید">
+							</div>
+						</div>
+						<br><br><br>
+						<div class="md-form ">
+							<span>لینک</span>
+							<input type="text" id="taskLink" class="form-control" placeholder="https://www.example.com">
+						</div>
+						<div>
+							<label for="textarea1">توضیحات</label>
+							<textarea id="textarea1" class="md-textarea" length="1000">
+						</textarea>
+						</div>
+						<br><br>
+						<div class="md-form">
+							<span>برچسب</span>
+							<input type="text" id="taskBadge" class="form-control" placeholder="متن برچسب">
+							<div class="">
+								<div class="row">
+									<a class="col-1">
+										<div class="rounded-circle p-4 red"></div>
+									</a>
+									
+									<a class="col-1">
+										<div class="rounded-circle p-4 yellow"></div>
+									</a>
+									
+									<a class="col-1">
+										<div class="rounded-circle p-4 blue"></div>
+									</a>
+									
+									<a class="col-1">
+										<div class="rounded-circle p-4 green"></div>
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						
+						<br><br>
+						<button type="submit" class="btn btn-lg btn-primary">ثبت تغییرات</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	<!--</div> &lt;!&ndash;./WRAPPER END-->
+	PLACE FOR TASKS-->
+	</main> <!--/.CONTAINER FLUID-->
+
+<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+<script src="js/compiled.min.js"></script>
+<script src="js/javascript.js" charset="utf-8"></script>
+</body>
+</html>

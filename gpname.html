@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/compiled.min.css">
+	<link rel="stylesheet" href="css/master.css">
+	<title>Document</title>
+</head>
+<body>
+<header>
+	
+	<!--Navigation-->
+	<nav class="navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar elegant-color-dark p-0" dir="rtl">
+		<div class="container">
+			<!--<button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>-->
+			<div class="my-user-box navbar-brand"> <a href="#!" class="nav-link dropdown-toggle" id="settingUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="img/user.png" alt="user avatar" class="rounded-circle" width="62px" height="62px"> <span href="#!" class="m-1"><b>نام کاربر</b></span> </a>
+				<div class="dropdown-menu dropdown-menu-right mr-4" aria-labelledby="settingUser"> <a class="dropdown-item">خروج</a></div>
+			</div>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#addNewGroup"> <i class="fa fa-plus fa-2x"  data-toggle="tooltip" data-placement="bottom" title="اضافه کردن گروه"></i> </a> </li>
+			</ul>
+		</div>
+	</nav>
+	<!--/.Navigation-->
+
+</header>
+<!-- Main -->
+<main class="mt-5" dir="rtl">
+	<div class="container">
+		<!--Modal: add new groupe-->
+		<div class="modal fade" id="addNewGroup" tabindex="-1" role="dialog" aria-labelledby="addNewGroup" aria-hidden="true" dir="rtl">
+			<div class="modal-dialog cascading-modal" role="document">
+				<!--Content-->
+				<div class="modal-content">
+					
+					<!--Header-->
+					<div class="modal-header light-blue darken-3 white-text text-center">
+						<button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+						<h4 class="title text-center mx-auto">گروه جدید</h4>
+					</div>
+					<!--Body-->
+					<div class="modal-body mb-0">
+						<div class="md-form form-sm">
+							<input type="text" id="gpName" class="form-control">
+							<label for="gpName" class="" style="margin-left: 45%">نام گروه</label>
+						</div>
+						<div class="md-form form-sm">
+							<textarea type="text" id="gpExplain" class="md-textarea" placeholder="توضیحات گروه"></textarea>
+						</div>
+						<div class="text-center mt-1-half">
+							<button class="btn btn-info mb-2"> ایجاد <i class="fa fa-magic ml-1"></i></button>
+						</div>
+					</div>
+				</div>
+				<!--/.Content-->
+			</div>
+		</div>
+		<!--Modal: add new groupe-->
+		
+		<div class="row">
+			<div class="col mt-3">
+				<div class="" id="task-part">
+					<h3>کار جدید</h3>
+					<form id="add-task" class="">
+						<div class="md-form">
+							<input type="text" id="new-task" class="form-control col-md-8">
+						</div>
+						<div class="md-form">
+							<button type="button" class="btn btn-default"><b>اضافه</b></button>
+						</div>
+					</form> <!--end form-->
+				</div> <!--end task lparat-->
+				
+				<div class="row">
+					<div class="col">
+						<ul>
+							<li class="">
+								<div class="row">
+									<div class="col-md-1">
+										<fieldset class="form-group">
+											<input type="checkbox" id="task1-chk">
+											<label for="task1-chk"></label>
+										</fieldset>
+									</div>
+									<div class="col-md-6">
+										<a href="task.html" class="my-text-wet-asphalt d-block">کار 1</a>
+									</div>
+									<div class="col-md-3">
+										<span class="float-left">
+        									<a href="#!" class="my-hover-text-alizarin" data-toggle="tooltip" 												data-placement="top" title="حذف کار"><i class="fa 												fa-close"></i></a>
+										</span>
+									</div>
+								</div>
+								<hr>
+							</li>
+						</ul>
+					</div>
+				</div> <!--end of tasks row list-->
+			</div> <!--end col mt-3-->
+		</div> <!--end row-->
+		<!--container of tasks-->
+	
+	</div>
+	<!--/.Container-->
+</main>
+<!-- /.Main -->
+
+<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+<script src="js/compiled.min.js"></script>
+<script src="js/javascript.js" charset="utf-8"></script>
+</body>
+</html>
