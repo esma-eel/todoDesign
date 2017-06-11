@@ -70,3 +70,16 @@ header, main, footer {
     max-width: 1150px;
 }
 
+.main {
+    margin-left: 0px;margin-top: 85px;padding-left: 0px;padding-right: 250px;
+}
+
+@media only screen and (max-width: 1420px){
+    .main {
+        margin-left: 0px;margin-top: 85px;padding-left: 0px;padding-right: 0px;margin-right: 2%;
+    }
+}
+
+html,main {
+    overflow-x: hidden;
+}

@@ -59,6 +59,41 @@ $(function () {
     });
 
 
+    $(document).on('click', '.changeTo', function () {
+        var input = $('<input />', {
+            'type': 'text',
+            'name': 'unique',
+            'class': 'changeTo2',
+            'value': $(this).html()
+        });
+        $(this).parent().append(input);
+        $('#editWork').text($(this).html());
+        $(this).remove();
+        input.focus();
+
+    });
+
+    $(document).on('blur', '.changeTo2', function () {
+        if ($(this).val() == ""){
+            $(this).parent().append($('<span class="changeTo"/>').html("بدون نام"));
+        }
+        $(this).parent().append($('<span class="changeTo"/>').html($(this).val()));
+        $('#editWork').text($(this).val());
+        $(this).remove();
+
+        /*$('#collapseSetting').removeClass('show').attr('aria-expanded','false');
+        $('#acollapse').attr('aria-expanded','false');*/
+    });
+
+
+
+
+
+
+
+
+
+
 
 
 });
