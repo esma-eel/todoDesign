@@ -59,7 +59,11 @@ $(function () {
     });
 
 
-    $(document).on('click', '.changeTo', function () {
+    $(document).on('click', '.changeTo', function (event) {
+        /*check if collapsse setting is opoen then just change the name and scroll to it again*/
+        var acollapse = $('#acollapse');
+        var collapseSetting = $('#collapseSetting');
+
         var input = $('<input />', {
             'type': 'text',
             'name': 'unique',
@@ -71,6 +75,13 @@ $(function () {
         $(this).remove();
         input.focus();
 
+        acollapse.removeAttr('href');
+        acollapse.removeAttr('data-toggle');
+        acollapse.removeAttr('aria-expanded');
+        collapseSetting.attr('aria-expanded','true');
+        acollapse.removeAttr('href');
+        $('#editWork').text($(this).val());
+
     });
 
     $(document).on('blur', '.changeTo2', function () {
@@ -80,7 +91,7 @@ $(function () {
         $(this).parent().append($('<span class="changeTo"/>').html($(this).val()));
         $('#editWork').text($(this).val());
         $(this).remove();
-
+        $('html, body').scrollTo('#collapseSetting');
         /*$('#collapseSetting').removeClass('show').attr('aria-expanded','false');
         $('#acollapse').attr('aria-expanded','false');*/
     });
